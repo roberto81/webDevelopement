@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aa92a827-6bd4-43cc-b3dc-1b4ced9b5012" name="server" url="http://stud-pw.netgroup.uniroma2.it/~PW0154822/hw4">
+        <fileTransfer host="stud-pw.netgroup.uniroma2.it" port="22" rootFolder="/public_html/hw4" accessType="SFTP" password="dfc3dfdbdfc4dfdcdf99df9adfcfdfdb" username="PW0154822">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

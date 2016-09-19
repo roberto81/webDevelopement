@@ -1,0 +1,472 @@
+/*
+    Author: Roberto Pallotta
+    E-mail: robertopallotta@tiscalinet.it
+
+    File Name:style.css
+    Position: /
+    Description: Il file contiene tutte le regole css necessarie per la definizione dello
+                 stile della pagina index.html.
+*/
+
+/* SEZIONE DEDICATA ALLE PROPRIETA' GENERALI DELLA PAGINA */
+
+/*
+importa i font necessari tramite i CDN google
+*/
+@import url(https://fonts.googleapis.com/css?family=Play);
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+/*
+Si definisce lo stile di base per la pagina
+*/
+body{
+    background-color: #ffffff;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+}
+
+/*
+Si definisce lo stile per tutta la famiglia dei tag <h 1,.,6>
+*/
+
+h1, h2, h3, h4, h5, h6{
+    color: #c76161;
+    font-family: 'Play';
+}
+
+/*
+Si definiscono gli stili per il tag <a> sia nello stato default che nello stato hover
+*/
+
+a{
+    color: #3a7777;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #F5AF33;
+}
+
+/*
+Definisce lo stile utilizzato negli item dei menu per identificare in che paginaù/sezione l'utente si trova
+*/
+.currentPage{
+    text-decoration: none;
+    color: #F5AF33;
+}
+/* SEZIONE DEDICATA AL POSIZIONAMENTO DEGLI ELEMENTI PRINCIPALI DELLA PAGINA */
+
+/*
+Si definiscono gli stili per l'elemento semantico header
+*/
+header{
+    width: 100%;
+    height: 230px;
+    background-image: url('http://ppl.eln.uniroma2.it/pw/img/pic2.jpg');
+    background-attachment: fixed;
+}
+
+/*
+Definisce lo stile per i due elementi che sono utilizzati per centrare il titolo e la
+barra di navigazione
+*/
+.headerHeadTail {
+    width: 100%;
+    height: 80px;
+}
+
+/*
+Definisce lo stile per per l'elemento centrale dell'header
+*/
+.headerCenter {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+/*
+Definisce il contenitore centrale per il titolo e la barra di navigazione
+*/
+#ContenetContainer {
+    position: relative;
+    width: 944px;
+    height: 70px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+/*
+Definisce lo stile per il contenitore del titolo
+*/
+#titleContainer {
+    width: 400px;
+    height: 70px;
+    position: absolute;
+    float: left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Definisce il contenitore per l'immagine con la luna messa come background
+*/
+#graphictitle {
+    width: 400px;
+    height: 90px;
+    position: absolute;
+    float: left;
+    background: url('http://ppl.eln.uniroma2.it/pw/img/bg-logo.png');
+}
+
+/*
+Definisce lo stile per il titolo
+*/
+#titleContainer h1{
+    font-size: 2.2em;
+    font-weight: bold;
+    z-index: 15;
+}
+
+
+/*
+Si definisce lo stile per la barra di navigazione
+*/
+nav{
+    width: 544px;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    display:flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/*
+definisce lo stile per gli elementi della barra di navigazione implementata tramite
+una lista non ordinata
+*/
+nav ul li{
+    float: left;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Hind', sans-serif;
+}
+
+nav ul li a{
+    font-weight: bold;
+}
+
+/*
+Si definiscono gli stili per l'elemento semantico main e gli elementi in esso
+contenuti
+*/
+main{
+    width: 944px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+/*
+Definisce la colonna/contenitore per la parte alta del corpo della pagina
+*/
+#topColumn {
+    width: 944px;
+    margin-top: 20px;
+    border-top: solid 1px;
+    border-top-color: #888888;
+
+}
+
+/*
+Definisce lo stile per i paragrafi utilizzati nella colonna/contenitore della parte
+alta della pagina
+*/
+#topColumn p{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #F5AF33;
+}
+
+/*
+definisce lo stile utilizzato per le immagini social
+*/
+#topColumn a img{
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-left: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*
+Definisce lo stile utilizzato per i titoli nella colonna/contenitore della parte alta
+della pagina
+*/
+#topColumn h1{
+    clear: left;
+    font-size: 2em;
+}
+
+/*
+Definisce lo stile/dimensione dell'immagine utilizzata nel corpo centrale della pagina
+*/
+#topColumn p img{
+    width: 944px;
+}
+
+/*
+Definisce lo stile per il contenitore centrale della pagina
+*/
+#mainContainer {
+    width: 944px;
+}
+
+/*
+Definisce il contenitore sinistro contenuto nel main
+*/
+#mainContainerLeft {
+    float: left;
+    width: 600px;
+    margin-right: 44px;
+}
+
+/*
+Definisce il contenitore destro contenuto nel main
+*/
+#mainContainerRight {
+    float: right;
+    width: 300px;
+}
+
+#mainContainerLeft h2{
+    font-size: 1.4em;
+    padding-bottom: 15px;
+}
+
+#mainContainerRight img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mainContainerLeft ul{
+
+    /* necessaria dato che si usa il reset di pagina */
+    list-style-position: inside;
+    width: 600px;
+}
+
+/*
+Definisce lo stile per il menu degli ingredienti
+*/
+#mainContainerLeft ul li{
+    width: 300px;
+    padding-bottom: 15px;
+    list-style-image: url('http://ppl.eln.uniroma2.it/pw/img/dot.png');
+    text-transform: lowercase;
+    float: left;
+    font-size: 1.1em;
+    font-family: 'Hind', sans-serif;
+}
+/*
+Definisce lo stile per il titolo Preparazione della ricetta (posiziona l'elemento nel
+flusso normale della pagina)
+*/
+#mainContainerLeft h2{
+    clear: left;
+}
+/*
+Definisce lo stile per i paragrafi utilizzati per descrivere la procedura di preparazione
+*/
+#mainContainerLeft p{
+    margin-bottom: 15px;
+    font-family: 'Hind', sans-serif;
+}
+
+/*
+QUI SI GESTISCE LA SEZIONE DEI COMMENTI
+*/
+
+/* 
+    per specificità id,class,selettori(tag) 
+    2.1.0
+*/
+#mainContainer #mainContainerLeft .commentSection{
+    width: 600px;
+    list-style-image: none;
+    font-size: 14px;
+}
+
+/*
+Per specificità id,class,selettori(tag)
+Definisce lo stile utilizzato per le label (nome utente e data)
+*/
+#mainContainer #mainContainerLeft .labelcomment {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*
+Qui si definisce lo stile di un commento
+*/
+#mainContainer #mainContainerLeft .comment {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    color: #3d3257;
+    background-color: #f8f6f9;
+}
+
+/*
+Per specificità id,class,selettori(tag)
+Definisce lo stile utilizzato per le label (nome utente e data) delle risposte
+*/
+#mainContainer #mainContainerLeft .labelresponse {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+/*
+Definisce lostile per le risposte ai commenti
+*/
+#mainContainer #mainContainerLeft .response {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    color: white;
+    background-color: #c76161;
+}
+
+/* SEZIONE DEDICATA ALLA COLONNA DESTRA */
+
+/*
+Definisce lo stile per i titoli.
+*/
+#mainContainerRight h3{
+    font-size: 1.2em;
+}
+
+/*
+Definisce lo stile per gli elemtni del menu della colonna di destra
+*/
+#mainContainerRight ul li{
+    font-family: 'Hind', sans-serif;
+}
+
+/*
+definisce lo stile per le immagini utilizzate nella colonna di destra
+*/
+#mainContainerRight ul li img{
+    vertical-align: middle;
+    border: solid 1px;
+    border-color: #c76161;
+
+}
+
+/* SEZIONE DEDICATA AL FOOTER*/
+
+/*
+usa il tag semantico di html5 per la parte inferiore della pagina e definiamo per questo
+tag lo stile desiderato
+*/
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+    display: inline-block;
+}
+
+/*
+Con la definizione di questo id definiamo lo stile per il contenitore degli elementi del
+footer
+*/
+#footerContainer{
+    width: 944px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
+Questa classe definisce lo stile di una colonna per i menu di navigazione
+*/
+#footerContainer .col{
+    width: 33.3333%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footerContainer .col ul li{
+    font-family: 'Hind', sans-serif;
+}
+
+/*
+Si associa al tag h3 lo stile desiderato per i titoli del menu
+*/
+#footerContainer .col h3{
+    color: #F5AF33;
+    font-size: 1.2em;
+}
+
+/*
+Definisce lo stile per il tag hr che ci permette di separare i vari contenuti del footer
+*/
+#footerContainer hr{
+    color: #f1f1f1;
+    clear: left;
+}
+
+/*
+Si associa al tag h3 lo stile desiderato per il titolo di una sezione utilizzata nel footer
+*/
+#footerContainer h4{
+    margin-top: 20px;
+    color: #c76161;
+    font-size: 1em;
+
+}
+
+/*
+Definisce lo stile per i paragrafi utilizzati nel footer
+*/
+#footerContainer p{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Hind', sans-serif;
+}
+
+/*
+Definisce lo stile utilizzato per il CopyRight
+*/
+#footerContainer #copyRight{
+    margin-top: auto;
+    font-size: 0.8em;
+    float: left;
+    font-family: 'Hind', sans-serif;
+}
+
+/*
+definisce lo stile per le immagini che rappresentano i link ai validatori
+*/
+#footerContainer img{
+    float: right;
+}

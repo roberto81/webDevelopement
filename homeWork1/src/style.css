@@ -1,0 +1,53 @@
+/*
+	Author: Roberto Pallotta
+	File: style.css
+	Location: /
+	Description: file di stile utilizzato per definire l'aspetto della pagina carbonara.html
+*/
+
+
+body{
+	background-image: url("http://ppl.eln.uniroma2.it/pw/img/bg1.jpg");
+	background-attachment: fixed;
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia Garamond serif
+}
+
+.headertext{
+	background:  #F0F0F0;
+}
+
+h1,h2{
+	font-family: Lucida Sans Unicode Helvetica Arial sans-serif;
+	color: #9A002C;
+	letter-spacing: 0.2em;
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 22pt;
+	text-align: center;
+}
+
+h2{
+	font-size: 18pt;
+	text-align: left;
+}
+
+ul{
+	list-style-image: url(http://ppl.eln.uniroma2.it/pw/img/bull.png);
+}
+
+a{
+	color: #9A002C;
+}
+
+blockquote{
+	font-style: italic;
+	background: #FFF5EE;
+}
+
+.textbold{
+	font-weight: bold;
+}

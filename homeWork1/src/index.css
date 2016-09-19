@@ -1,0 +1,23 @@
+
+body{
+	background-color: white;
+}
+
+header{
+	background: url(http://www.millennium-beb.com/images/apartments/banner_5_banner_colosseo.jpg);
+	background-size: cover;
+	margin-top: 0px;
+	height: 200px;
+	margin: 0px;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-family: serif;
+	font-size: 3em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #000, 1px 3px 5px #f00;
+	padding-top: 50px;
+	margin-top: 0px;
+}
